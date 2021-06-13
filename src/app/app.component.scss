@@ -1,7 +1,7 @@
-$size: 75px;
+$size: 4.5vw;
 $boxColor: #0ff7;
 
-.wrapper {
+.wrapper { 
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -427,8 +427,8 @@ $shadows-big:    multiple-box-shadow(100);
         text-align: center;
         font-family: 'lato',sans-serif;
         font-weight: 300;
-        font-size: 50px;
-        letter-spacing: 10px;
+        font-size: 3.5vw;
+        letter-spacing: .2vw;
         z-index: 1;
         
         span {
