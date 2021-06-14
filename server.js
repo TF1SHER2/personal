@@ -26,17 +26,17 @@ function requireHTTP(req, res, next) {
 app.use(express.static('./dist/personal'));
 app.use(requireHTTP);
 
-// app.get('/*', function(req, res) {
-//     res.sendFile('index.html', {root: 'dist/personal/'});
-// });
-
-app.get('*', (req, res) => {
-    if (allowedExt.filter(ext => req.url.indexOf(ext) > 0).length > 0) {
-        res.sendFile(path.resolve(`${req.url}`));
-    } else {
-        res.sendFile(path.resolve('dist/index.html'));
-    }
+app.get('/*', function(req, res) {
+    res.sendFile('index.html', {root: 'dist/personal/'});
 });
+
+// app.get('*', (req, res) => {
+//     if (allowedExt.filter(ext => req.url.indexOf(ext) > 0).length > 0) {
+//         res.sendFile(path.resolve(`${req.url}`));
+//     } else {
+//         res.sendFile(path.resolve('dist/index.html'));
+//     }
+// });
 
 
 app.listen(process.env.PORT || 8080);
