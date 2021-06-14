@@ -1,0 +1,145 @@
+.about-me {
+    font-family: "lato", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    color: white;
+
+    .title-wrap {
+        height: 20vh;
+        text-align: center;
+        .title {
+            font-weight: bold;
+            position: absolute;
+            margin: 0;
+            width: 100%;
+            top: 14vh;
+            font-size: 20px;
+            
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+                font-size: 24px;
+            }
+            
+            /* Large devices (laptops/desktops, 992px and up) */
+            @media only screen and (min-width: 992px) {
+                font-size: 28px;
+            }
+            
+            /* Extra large devices (large laptops and desktops, 1200px and up) */
+            @media only screen and (min-width: 1200px) {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .page {
+        margin: 5vh;
+        margin-top: 0;
+        background-color: #7f7f7f;
+        border-radius: 25px;
+        overflow: hidden;
+    
+        .image-col {
+            position: relative;
+            height: 40vh;
+            .me {
+                position: absolute;
+                bottom: 0;
+                height: 30vh;
+                left: 10%;
+                margin-bottom: 2px;
+            }
+        
+            .triangle {
+                width: 0;
+                height: 0;
+                border-bottom: 30vh solid #fff;
+                border-left: 150vw solid transparent;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    
+        .content {
+            height: 35vh;
+            background-color: #fff;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: black;
+            padding: 20px 0;
+            margin-top: -1px;
+            box-sizing: border-box;
+
+            .content-col {
+                height: 90%;
+                overflow-y: scroll;
+                padding: 0 20px;
+            }
+
+            .name {
+                font-size: 18px;
+                margin: 0;
+                height: 10%;
+                padding: 0 20px;
+                /* Medium devices (landscape tablets, 768px and up) */
+                @media only screen and (min-width: 768px) {
+                    font-size: 22px;
+                }
+                
+                /* Large devices (laptops/desktops, 992px and up) */
+                @media only screen and (min-width: 992px) {
+                    font-size: 26px;
+                }
+                
+                /* Extra large devices (large laptops and desktops, 1200px and up) */
+                @media only screen and (min-width: 1200px) {
+                    font-size: 30px;
+                }
+            }
+
+            .p-text {
+                font-size: 16px;
+                /* Medium devices (landscape tablets, 768px and up) */
+                @media only screen and (min-width: 768px) {
+                    font-size: 20px;
+                }
+                
+                /* Large devices (laptops/desktops, 992px and up) */
+                @media only screen and (min-width: 992px) {
+                    font-size: 24px;
+                }
+                
+                /* Extra large devices (large laptops and desktops, 1200px and up) */
+                @media only screen and (min-width: 1200px) {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+.chevron-wrap {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    text-align: center;
+
+    .fa-chevron-up {
+        padding: 25px;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
