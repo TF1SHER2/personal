@@ -15,18 +15,13 @@
             width: 100%;
             top: 14vh;
             font-size: 20px;
-            
-            /* Medium devices (landscape tablets, 768px and up) */
+
             @media only screen and (min-width: 768px) {
                 font-size: 24px;
             }
-            
-            /* Large devices (laptops/desktops, 992px and up) */
             @media only screen and (min-width: 992px) {
                 font-size: 28px;
             }
-            
-            /* Extra large devices (large laptops and desktops, 1200px and up) */
             @media only screen and (min-width: 1200px) {
                 font-size: 32px;
             }
@@ -39,7 +34,7 @@
         background-color: #7f7f7f;
         border-radius: 25px;
         overflow: hidden;
-    
+
         .image-col {
             position: relative;
             height: 40vh;
@@ -50,7 +45,7 @@
                 left: 10%;
                 margin-bottom: 2px;
             }
-        
+
             .triangle {
                 width: 0;
                 height: 0;
@@ -60,7 +55,7 @@
                 bottom: 0;
             }
         }
-    
+
         .content {
             height: 35vh;
             background-color: #fff;
@@ -70,6 +65,7 @@
             padding: 20px 0;
             margin-top: -1px;
             box-sizing: border-box;
+            position: relative;
 
             .content-col {
                 height: 90%;
@@ -82,37 +78,61 @@
                 margin: 0;
                 height: 10%;
                 padding: 0 20px;
-                /* Medium devices (landscape tablets, 768px and up) */
+                position: absolute;
+                right: 0;
+                top: -32px;
+                font-weight: bold;
+
                 @media only screen and (min-width: 768px) {
-                    font-size: 22px;
+                    font-size: 22px!important;
                 }
-                
-                /* Large devices (laptops/desktops, 992px and up) */
                 @media only screen and (min-width: 992px) {
-                    font-size: 26px;
+                    font-size: 26px!important;
                 }
-                
-                /* Extra large devices (large laptops and desktops, 1200px and up) */
                 @media only screen and (min-width: 1200px) {
-                    font-size: 30px;
+                    font-size: 30px!important;
                 }
             }
 
+            .sub-heading {
+              font-weight: 600;
+              padding: 0;
+              margin: 0;
+              margin-bottom: 5px;
+            }
+
             .p-text {
+              margin: 0;
+              margin-bottom: 20px;
+              display: inline-block;
+              padding: 0;
+              color: black;
+            }
+
+            .p-text, .sub-heading {
                 font-size: 16px;
                 /* Medium devices (landscape tablets, 768px and up) */
                 @media only screen and (min-width: 768px) {
                     font-size: 20px;
                 }
-                
+
                 /* Large devices (laptops/desktops, 992px and up) */
                 @media only screen and (min-width: 992px) {
                     font-size: 24px;
                 }
-                
+
                 /* Extra large devices (large laptops and desktops, 1200px and up) */
                 @media only screen and (min-width: 1200px) {
                     font-size: 28px;
+                }
+            }
+
+            .works-logo {
+                height: 45px;
+                width: auto;
+
+                &.motion-logo {
+                  border-radius: 8px;
                 }
             }
         }
@@ -133,13 +153,13 @@
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
     border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
 }
