@@ -6,14 +6,14 @@
     color: white;
 
     .title-wrap {
-        height: 20vh;
+        height: 18vh;
         text-align: center;
         .title {
             font-weight: bold;
             position: absolute;
             margin: 0;
             width: 100%;
-            top: 14vh;
+            top: 11vh;
             font-size: 20px;
 
             @media only screen and (min-width: 768px) {
@@ -29,7 +29,7 @@
     }
 
     .page {
-        margin: 5vh;
+        margin: 7vh 5vh;
         margin-top: 0;
         background-color: #7f7f7f;
         border-radius: 25px;
@@ -128,12 +128,19 @@
             }
 
             .works-logo {
-                height: 45px;
+                max-height: 45px;
+                max-width: 100%;
                 width: auto;
+                height: auto;
 
                 &.motion-logo {
                   border-radius: 8px;
                 }
+            }
+
+            .link-wrap {
+              display: block;
+              width: 100%;
             }
         }
     }
