@@ -20,7 +20,6 @@
     "@angular/platform-browser-dynamic": "~12.0.4",
     "@angular/router": "~12.0.4",
     "bootstrap": "^5.2.1",
-    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "ng-bootstrap": "^1.6.3",
     "rxjs": "~6.6.0",
