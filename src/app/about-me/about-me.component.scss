@@ -72,6 +72,20 @@
                 height: 90%;
                 overflow-y: scroll;
                 padding: 0 20px;
+
+                .icon-wrap {
+                  text-align: center;
+                  .icon {
+                    text-decoration: none;
+                    color: black;
+                    font-size: 2.5rem;
+                    margin-bottom: 2rem;
+
+                    @media only screen and (min-width: 768px) {
+                      font-size: 4rem;
+                    }
+                  }
+                }
             }
 
             .name {
@@ -136,6 +150,10 @@
 
                 &.motion-logo {
                   border-radius: 8px;
+                }
+
+                &.institute {
+                  max-height: 30px;
                 }
             }
 
