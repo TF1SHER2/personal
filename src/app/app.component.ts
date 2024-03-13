@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationEnd, NavigationStart, Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Subscription, filter } from 'rxjs';
 import { siteAnimations } from './animations';
+declare var gtag: any;
 
 @Component({
   selector: 'app-root',
@@ -29,6 +30,9 @@ export class AppComponent implements OnInit {
         //console.log("To: " + this.router.url);
         this.nextRoute = this.router.url;
         this.prepareAnimationState();
+        gtag('config', 'G-373K50R552', {
+          'page_path': routeData.urlAfterRedirects
+        });
       }
     }));
   }
