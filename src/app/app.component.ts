@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
         //console.log("To: " + this.router.url);
         this.nextRoute = this.router.url;
         this.prepareAnimationState();
-        gtag('config', 'G-373K50R552', {
+        gtag('config', 'G-94V78B241Q', {
           'page_path': routeData.urlAfterRedirects
         });
       }
